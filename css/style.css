@@ -1,0 +1,151 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #272b30;
+  font-family: "Comfortaa", sans-serif;
+  color: #fff;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Nerko One", cursive;
+  color: #fff;
+}
+
+.header-img {
+  height: 30dvh;
+  object-fit: cover;
+}
+
+.navbar {
+  background-color: #3a497b;
+  margin-top: -3rem;
+  z-index: 2;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand {
+  font-size: 3rem;
+}
+
+.navbar.sticky {
+  position: fixed;
+  margin-top: 0rem;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo {
+  width: 4rem;
+}
+
+.nav-link {
+  transition: all 0.4s;
+  color: #fff;
+}
+.navbar-nav .nav-link.active {
+  color: #0099cc;
+}
+
+.nav-link:hover {
+  color: #0099cc;
+  cursor: pointer;
+}
+
+.fixed-navbar {
+  position: fixed;
+  top: 0;
+  margin-top: 0;
+}
+
+/* start card */
+.game-card {
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.card-text {
+  font-size: 1.3rem;
+}
+
+.game-card:hover {
+  transform: scale(1.05);
+}
+
+.game-img {
+  filter: grayscale(70%);
+  transition: all 0.3s;
+}
+
+.game-card:hover .game-img {
+  filter: grayscale(0%);
+}
+
+.card-badge {
+  background-color: rgba(13, 110, 253, 0.3);
+  transition: all 0.3s;
+}
+.game-card:hover .card-badge {
+  background-color: rgba(13, 110, 253, 1);
+}
+
+.footer-badge {
+  background-color: #32383e;
+}
+
+#details {
+  background-color: #27282b;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.btn-details:hover {
+  background-color: #ffc107;
+}
+
+.loader {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 5;
+  background-color: #272b30ad;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #ffc107 transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
