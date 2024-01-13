@@ -10,7 +10,10 @@
 
 4. Explore and Enjoy!
  - Feel free to explore different game categories, read reviews, and have fun exploring the world of free-to-play games!
-   
+
+## Demo 
+- Live demo: https://karim-gamereviewer.netlify.app/
+  
 ## Files Included
 
 - index.html: Main HTML file for the web application.
